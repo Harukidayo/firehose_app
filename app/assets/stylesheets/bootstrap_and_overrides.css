@@ -28,6 +28,7 @@ body {
     font-weight: 100;
     font-size: 48px;
     color: white;
+    line-height: 60px;
 }
 
 /* Override all h2 tags */
