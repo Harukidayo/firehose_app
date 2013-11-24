@@ -1,6 +1,15 @@
 class PicsController < ApplicationController
 
 
+	def destroy
+		Pic.destroy(params[:id])
+		redirect_to pics_path
+	end
+
+	def show
+		@pic = Pic.find(params[:id])
+	end
+
 	def create
 		# Pic.create(:lesson => 1, ...)
 		@pic = Pic.create( pic_params )
